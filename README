@@ -1,0 +1,18 @@
+This is a mirror of http://www.vim.org/scripts/script.php?script_id=4697
+
+This plugin adds the ]m, ]M, [m, [M motions for perl scripts. 
+
+Vim already supports these motions but they are available only for certain languages.
+
+]m - jump to the next perl subroutine start
+]M - jump to the next perl subroutine end
+[m - jump to previous perl subroutine start
+[M - jump to previous perl subroutine end
+
+CAVEATS:
+1. Does not preserve the jump list nor the ` mark (previous position)
+2. There is small issue when using it with operators (e.g. yank copies the subroutine but leaves the last brace off)
+3. Visual selection operator is unsupported
+
+Guthub repository:
+https://github.com/catalinciurea/perl-nextmethod
